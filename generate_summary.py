@@ -25,7 +25,7 @@ def call_gemini(prompt: str, max_retries: int = 5) -> str:
         "contents": [{"parts": [{"text": prompt}]}],
         "generationConfig": {
             "temperature": 0.2,  # Low temperature strictly minimizes hallucination
-            "maxOutputTokens": 800,
+            "maxOutputTokens": 4096,
         }
     }
     data = json.dumps(payload).encode("utf-8")
@@ -144,6 +144,11 @@ def run_pipeline(version: str = "v1", limit: int = None):
             
             prompt = get_v1_prompt(comp) if version == "v1" else get_v2_prompt(comp)
             summary = call_gemini(prompt)
+            
+            # Handle empty summaries 
+            if not summary:
+                print(f"  [Skipped] Empty summary for {reg_num}, will retry next run.")
+                continue
 
             # Persist summary in the exact schema specified by OneCredit
             record = {
