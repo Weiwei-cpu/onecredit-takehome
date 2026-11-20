@@ -21,6 +21,7 @@ statuses = Counter()
 industries = Counter()
 years_dist = Counter()
 has_litigation = 0
+company_rows = []
 
 for c in companies:
     p = c.get("profile", {})
@@ -46,6 +47,17 @@ for c in companies:
         f"{len(cases):<5} "
         f"{p.get('companyName', 'N/A')}"
     )
+    
+    company_rows.append({
+        "registrationNumber": c["registrationNumber"],
+        "companyName": p.get("companyName", "N/A"),
+        "status": status,
+        "industry": industry,
+        "financialYears": len(yrs),
+        "directorsCount": len(r.get("directors", [])),
+        "shareholdersCount": len(r.get("shareholders", [])),
+        "courtCasesCount": len(cases),
+    })
 
 # 2. Summary statistics
 print("\n=== DATASET SUMMARY ===")
@@ -65,3 +77,19 @@ if sample["financials"]["years"]:
     print("  statements  :", list(y0["statements"].keys()))
     print("  ratios      :", list(y0["ratiosAndMetrics"].keys()))
 print("litigation    :", list(sample["litigation"].keys()))
+
+# 4. Save EDA summary to JSON file
+eda_output = {
+    "total_companies": len(companies),
+    "status_counts": dict(statuses),
+    "financial_years_distribution": dict(years_dist),
+    "companies_with_litigation": has_litigation,
+    "industry_distribution": dict(industries.most_common()),
+    "companies": company_rows,
+}
+
+out_path = Path("eda_summary.json")
+with open(out_path, "w", encoding="utf-8") as f:
+    json.dump(eda_output, f, indent=2, ensure_ascii=False)
+
+print(f"\nSaved EDA profile to {out_path}")

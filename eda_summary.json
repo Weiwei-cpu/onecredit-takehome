@@ -1,0 +1,529 @@
+{
+  "total_companies": 50,
+  "status_counts": {
+    "Active": 48,
+    "Winding up": 2
+  },
+  "financial_years_distribution": {
+    "3": 38,
+    "2": 4,
+    "0": 3,
+    "1": 5
+  },
+  "companies_with_litigation": 18,
+  "industry_distribution": {
+    "Hospitality": 7,
+    "Food & Beverage": 7,
+    "Retail": 6,
+    "Healthcare": 5,
+    "Professional Services": 5,
+    "Technology": 5,
+    "Manufacturing": 4,
+    "Education": 3,
+    "Agriculture": 3,
+    "Construction": 3,
+    "Logistics": 2
+  },
+  "companies": [
+    {
+      "registrationNumber": "SYN-000029",
+      "companyName": "Unity Global Trading Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Retail",
+      "financialYears": 3,
+      "directorsCount": 5,
+      "shareholdersCount": 4,
+      "courtCasesCount": 0
+    },
+    {
+      "registrationNumber": "SYN-000067",
+      "companyName": "Jaya Prima Travel Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Hospitality",
+      "financialYears": 3,
+      "directorsCount": 4,
+      "shareholdersCount": 3,
+      "courtCasesCount": 0
+    },
+    {
+      "registrationNumber": "SYN-000148",
+      "companyName": "Indah Prima Medical Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Healthcare",
+      "financialYears": 3,
+      "directorsCount": 5,
+      "shareholdersCount": 4,
+      "courtCasesCount": 0
+    },
+    {
+      "registrationNumber": "SYN-000165",
+      "companyName": "Teguh Kirana Freight Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Logistics",
+      "financialYears": 3,
+      "directorsCount": 5,
+      "shareholdersCount": 2,
+      "courtCasesCount": 1
+    },
+    {
+      "registrationNumber": "SYN-000217",
+      "companyName": "Teguh Bestari Learning Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Education",
+      "financialYears": 3,
+      "directorsCount": 2,
+      "shareholdersCount": 2,
+      "courtCasesCount": 0
+    },
+    {
+      "registrationNumber": "SYN-000267",
+      "companyName": "Global Everbright Store Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Retail",
+      "financialYears": 3,
+      "directorsCount": 3,
+      "shareholdersCount": 2,
+      "courtCasesCount": 5
+    },
+    {
+      "registrationNumber": "SYN-000282",
+      "companyName": "Delima Pacific Academy Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Education",
+      "financialYears": 3,
+      "directorsCount": 2,
+      "shareholdersCount": 2,
+      "courtCasesCount": 0
+    },
+    {
+      "registrationNumber": "SYN-000286",
+      "companyName": "Cahaya Seri Catering Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Food & Beverage",
+      "financialYears": 2,
+      "directorsCount": 3,
+      "shareholdersCount": 2,
+      "courtCasesCount": 6
+    },
+    {
+      "registrationNumber": "SYN-000302",
+      "companyName": "Global Pacific Perunding Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Professional Services",
+      "financialYears": 0,
+      "directorsCount": 3,
+      "shareholdersCount": 3,
+      "courtCasesCount": 0
+    },
+    {
+      "registrationNumber": "SYN-000333",
+      "companyName": "Gemilang Harmoni Enterprise Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Retail",
+      "financialYears": 0,
+      "directorsCount": 3,
+      "shareholdersCount": 3,
+      "courtCasesCount": 0
+    },
+    {
+      "registrationNumber": "SYN-000381",
+      "companyName": "Cahaya Harmoni Hotel Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Hospitality",
+      "financialYears": 3,
+      "directorsCount": 2,
+      "shareholdersCount": 3,
+      "courtCasesCount": 0
+    },
+    {
+      "registrationNumber": "SYN-000397",
+      "companyName": "Pacific Pacific Education Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Education",
+      "financialYears": 2,
+      "directorsCount": 4,
+      "shareholdersCount": 4,
+      "courtCasesCount": 6
+    },
+    {
+      "registrationNumber": "SYN-000451",
+      "companyName": "Mutiara Delima Bakery Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Food & Beverage",
+      "financialYears": 3,
+      "directorsCount": 5,
+      "shareholdersCount": 4,
+      "courtCasesCount": 2
+    },
+    {
+      "registrationNumber": "SYN-000476",
+      "companyName": "Kirana Everbright Packaging Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Manufacturing",
+      "financialYears": 3,
+      "directorsCount": 4,
+      "shareholdersCount": 1,
+      "courtCasesCount": 0
+    },
+    {
+      "registrationNumber": "SYN-000510",
+      "companyName": "Seri Jaya Store Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Retail",
+      "financialYears": 3,
+      "directorsCount": 4,
+      "shareholdersCount": 2,
+      "courtCasesCount": 0
+    },
+    {
+      "registrationNumber": "SYN-000511",
+      "companyName": "Sinar Everbright Trading Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Retail",
+      "financialYears": 3,
+      "directorsCount": 5,
+      "shareholdersCount": 4,
+      "courtCasesCount": 0
+    },
+    {
+      "registrationNumber": "SYN-000545",
+      "companyName": "Cahaya Golden Systems Sdn. Bhd.",
+      "status": "Winding up",
+      "industry": "Technology",
+      "financialYears": 3,
+      "directorsCount": 3,
+      "shareholdersCount": 3,
+      "courtCasesCount": 8
+    },
+    {
+      "registrationNumber": "SYN-000546",
+      "companyName": "Gemilang Mega Systems Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Technology",
+      "financialYears": 3,
+      "directorsCount": 2,
+      "shareholdersCount": 2,
+      "courtCasesCount": 0
+    },
+    {
+      "registrationNumber": "SYN-000640",
+      "companyName": "Teguh Bestari Medical Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Healthcare",
+      "financialYears": 3,
+      "directorsCount": 2,
+      "shareholdersCount": 2,
+      "courtCasesCount": 6
+    },
+    {
+      "registrationNumber": "SYN-000657",
+      "companyName": "Mega Mutiara Catering Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Food & Beverage",
+      "financialYears": 3,
+      "directorsCount": 4,
+      "shareholdersCount": 3,
+      "courtCasesCount": 0
+    },
+    {
+      "registrationNumber": "SYN-000674",
+      "companyName": "Indah Bestari Hotel Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Hospitality",
+      "financialYears": 3,
+      "directorsCount": 3,
+      "shareholdersCount": 3,
+      "courtCasesCount": 2
+    },
+    {
+      "registrationNumber": "SYN-000677",
+      "companyName": "Mega Murni Klinik Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Healthcare",
+      "financialYears": 3,
+      "directorsCount": 5,
+      "shareholdersCount": 4,
+      "courtCasesCount": 5
+    },
+    {
+      "registrationNumber": "SYN-000783",
+      "companyName": "Seri Everbright Klinik Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Healthcare",
+      "financialYears": 3,
+      "directorsCount": 2,
+      "shareholdersCount": 1,
+      "courtCasesCount": 1
+    },
+    {
+      "registrationNumber": "SYN-000785",
+      "companyName": "Sejahtera Cahaya Technologies Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Technology",
+      "financialYears": 3,
+      "directorsCount": 5,
+      "shareholdersCount": 1,
+      "courtCasesCount": 0
+    },
+    {
+      "registrationNumber": "SYN-000802",
+      "companyName": "Sinar Gemilang Associates Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Professional Services",
+      "financialYears": 1,
+      "directorsCount": 5,
+      "shareholdersCount": 3,
+      "courtCasesCount": 0
+    },
+    {
+      "registrationNumber": "SYN-000923",
+      "companyName": "Everbright Mega Kopi Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Food & Beverage",
+      "financialYears": 3,
+      "directorsCount": 4,
+      "shareholdersCount": 3,
+      "courtCasesCount": 0
+    },
+    {
+      "registrationNumber": "SYN-001070",
+      "companyName": "Jaya Mega Consulting Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Professional Services",
+      "financialYears": 3,
+      "directorsCount": 4,
+      "shareholdersCount": 3,
+      "courtCasesCount": 2
+    },
+    {
+      "registrationNumber": "SYN-001085",
+      "companyName": "Global Murni Plastik Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Manufacturing",
+      "financialYears": 3,
+      "directorsCount": 5,
+      "shareholdersCount": 4,
+      "courtCasesCount": 0
+    },
+    {
+      "registrationNumber": "SYN-001102",
+      "companyName": "Seri Maju Digital Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Technology",
+      "financialYears": 3,
+      "directorsCount": 3,
+      "shareholdersCount": 3,
+      "courtCasesCount": 0
+    },
+    {
+      "registrationNumber": "SYN-001158",
+      "companyName": "Bestari Kirana Ladang Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Agriculture",
+      "financialYears": 1,
+      "directorsCount": 4,
+      "shareholdersCount": 3,
+      "courtCasesCount": 0
+    },
+    {
+      "registrationNumber": "SYN-001199",
+      "companyName": "Harmoni Murni Catering Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Food & Beverage",
+      "financialYears": 3,
+      "directorsCount": 3,
+      "shareholdersCount": 2,
+      "courtCasesCount": 0
+    },
+    {
+      "registrationNumber": "SYN-001203",
+      "companyName": "Pacific Seri Freight Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Logistics",
+      "financialYears": 0,
+      "directorsCount": 2,
+      "shareholdersCount": 3,
+      "courtCasesCount": 1
+    },
+    {
+      "registrationNumber": "SYN-001212",
+      "companyName": "Sinar Sinar Pelancongan Sdn. Bhd.",
+      "status": "Winding up",
+      "industry": "Hospitality",
+      "financialYears": 3,
+      "directorsCount": 3,
+      "shareholdersCount": 3,
+      "courtCasesCount": 8
+    },
+    {
+      "registrationNumber": "SYN-001253",
+      "companyName": "Everbright Teguh Hotel Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Hospitality",
+      "financialYears": 2,
+      "directorsCount": 5,
+      "shareholdersCount": 2,
+      "courtCasesCount": 0
+    },
+    {
+      "registrationNumber": "SYN-001294",
+      "companyName": "Maju Jaya Management Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Professional Services",
+      "financialYears": 1,
+      "directorsCount": 5,
+      "shareholdersCount": 4,
+      "courtCasesCount": 0
+    },
+    {
+      "registrationNumber": "SYN-001298",
+      "companyName": "Mutiara Delima Agro Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Agriculture",
+      "financialYears": 1,
+      "directorsCount": 4,
+      "shareholdersCount": 3,
+      "courtCasesCount": 0
+    },
+    {
+      "registrationNumber": "SYN-001355",
+      "companyName": "Teguh Cahaya Medical Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Healthcare",
+      "financialYears": 3,
+      "directorsCount": 2,
+      "shareholdersCount": 1,
+      "courtCasesCount": 0
+    },
+    {
+      "registrationNumber": "SYN-001389",
+      "companyName": "Everbright Prima Homestay Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Hospitality",
+      "financialYears": 3,
+      "directorsCount": 5,
+      "shareholdersCount": 3,
+      "courtCasesCount": 8
+    },
+    {
+      "registrationNumber": "SYN-001455",
+      "companyName": "Sejahtera Kirana Engineering Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Construction",
+      "financialYears": 3,
+      "directorsCount": 2,
+      "shareholdersCount": 2,
+      "courtCasesCount": 0
+    },
+    {
+      "registrationNumber": "SYN-001457",
+      "companyName": "Maju Murni Consulting Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Professional Services",
+      "financialYears": 3,
+      "directorsCount": 5,
+      "shareholdersCount": 1,
+      "courtCasesCount": 0
+    },
+    {
+      "registrationNumber": "SYN-001472",
+      "companyName": "Everbright Murni Plastik Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Manufacturing",
+      "financialYears": 3,
+      "directorsCount": 2,
+      "shareholdersCount": 2,
+      "courtCasesCount": 0
+    },
+    {
+      "registrationNumber": "SYN-001529",
+      "companyName": "Jaya Unity Precision Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Manufacturing",
+      "financialYears": 3,
+      "directorsCount": 5,
+      "shareholdersCount": 3,
+      "courtCasesCount": 0
+    },
+    {
+      "registrationNumber": "SYN-001560",
+      "companyName": "Prima Global Builders Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Construction",
+      "financialYears": 1,
+      "directorsCount": 4,
+      "shareholdersCount": 4,
+      "courtCasesCount": 0
+    },
+    {
+      "registrationNumber": "SYN-001569",
+      "companyName": "Unity Maju Makanan Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Food & Beverage",
+      "financialYears": 3,
+      "directorsCount": 5,
+      "shareholdersCount": 4,
+      "courtCasesCount": 0
+    },
+    {
+      "registrationNumber": "SYN-001618",
+      "companyName": "Sejahtera Kirana Resort Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Hospitality",
+      "financialYears": 3,
+      "directorsCount": 2,
+      "shareholdersCount": 1,
+      "courtCasesCount": 0
+    },
+    {
+      "registrationNumber": "SYN-001645",
+      "companyName": "Unity Cahaya Bina Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Construction",
+      "financialYears": 3,
+      "directorsCount": 3,
+      "shareholdersCount": 3,
+      "courtCasesCount": 0
+    },
+    {
+      "registrationNumber": "SYN-001829",
+      "companyName": "Murni Bestari Tech Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Technology",
+      "financialYears": 3,
+      "directorsCount": 2,
+      "shareholdersCount": 2,
+      "courtCasesCount": 2
+    },
+    {
+      "registrationNumber": "SYN-001894",
+      "companyName": "Kirana Mutiara Farm Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Agriculture",
+      "financialYears": 3,
+      "directorsCount": 2,
+      "shareholdersCount": 3,
+      "courtCasesCount": 3
+    },
+    {
+      "registrationNumber": "SYN-001969",
+      "companyName": "Mutiara Seri Runcit Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Retail",
+      "financialYears": 3,
+      "directorsCount": 3,
+      "shareholdersCount": 3,
+      "courtCasesCount": 1
+    },
+    {
+      "registrationNumber": "SYN-001970",
+      "companyName": "Teguh Sinar Food Sdn. Bhd.",
+      "status": "Active",
+      "industry": "Food & Beverage",
+      "financialYears": 2,
+      "directorsCount": 3,
+      "shareholdersCount": 2,
+      "courtCasesCount": 5
+    }
+  ]
+}

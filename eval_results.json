@@ -1,0 +1,412 @@
+{
+  "evaluated_companies": 20,
+  "judge_model": "qwen/qwen3.8-27b",
+  "payload_reduction_pct": 63.6,
+  "deterministic_checks": {
+    "v1": {
+      "version": "v1",
+      "count": 20,
+      "avg_word_count": 606.2,
+      "concise_under_300_words_pct": 5.0,
+      "structured_format_compliance_pct": 0.0,
+      "winding_up_surfaced_top_35w": "0/2",
+      "winding_up_petition_recall": "4/4",
+      "audit_warning_recall": "2/2",
+      "missing_financials_honesty": "3/3",
+      "temporal_hallucination_count": 2
+    },
+    "v2": {
+      "version": "v2",
+      "count": 20,
+      "avg_word_count": 217.4,
+      "concise_under_300_words_pct": 100.0,
+      "structured_format_compliance_pct": 100.0,
+      "winding_up_surfaced_top_35w": "2/2",
+      "winding_up_petition_recall": "4/4",
+      "audit_warning_recall": "2/2",
+      "missing_financials_honesty": "3/3",
+      "temporal_hallucination_count": 0
+    }
+  },
+  "llm_judge_averages": {
+    "v1": {
+      "factual_accuracy": 2.0,
+      "risk_triage": 3.4,
+      "conciseness": 2.1,
+      "decision_utility": 3.05
+    },
+    "v2": {
+      "factual_accuracy": 5.0,
+      "risk_triage": 5.0,
+      "conciseness": 4.95,
+      "decision_utility": 4.85
+    }
+  },
+  "pairwise_wins": {
+    "v1": 0,
+    "v2": 20,
+    "Tie": 0
+  },
+  "details": [
+    {
+      "registrationNumber": "SYN-000029",
+      "swapped_order": false,
+      "v1_scores": {
+        "factual_accuracy": 3,
+        "risk_triage": 3,
+        "conciseness": 2,
+        "decision_utility": 3
+      },
+      "v2_scores": {
+        "factual_accuracy": 5,
+        "risk_triage": 5,
+        "conciseness": 5,
+        "decision_utility": 5
+      },
+      "winner": "v2",
+      "reason": "Summary B is concise, accurately reflects the ground-truth data without hallucinating metrics or director details, and provides a clear, actionable risk verdict, whereas Summary A includes fabricated financial metrics (EBITDA, Total Assets) and incorrect director appointment dates."
+    },
+    {
+      "registrationNumber": "SYN-000067",
+      "swapped_order": true,
+      "v1_scores": {
+        "factual_accuracy": 2,
+        "risk_triage": 3,
+        "conciseness": 2,
+        "decision_utility": 3
+      },
+      "v2_scores": {
+        "factual_accuracy": 5,
+        "risk_triage": 5,
+        "conciseness": 5,
+        "decision_utility": 4
+      },
+      "winner": "v2",
+      "reason": "Summary A is factually accurate and concise, whereas Summary B hallucinates specific director appointment dates and financial metrics (gross profit, total assets) not present in the ground truth."
+    },
+    {
+      "registrationNumber": "SYN-000148",
+      "swapped_order": false,
+      "v1_scores": {
+        "factual_accuracy": 3,
+        "risk_triage": 4,
+        "conciseness": 2,
+        "decision_utility": 4
+      },
+      "v2_scores": {
+        "factual_accuracy": 5,
+        "risk_triage": 5,
+        "conciseness": 5,
+        "decision_utility": 5
+      },
+      "winner": "v2",
+      "reason": "Summary B is factually accurate, concise, and provides a clear high-risk verdict, whereas Summary A contains hallucinated details (specific director titles, audit firm name, and incorrect cash flow figures) and uses a bloated table format."
+    },
+    {
+      "registrationNumber": "SYN-000165",
+      "swapped_order": true,
+      "v1_scores": {
+        "factual_accuracy": 2,
+        "risk_triage": 4,
+        "conciseness": 2,
+        "decision_utility": 3
+      },
+      "v2_scores": {
+        "factual_accuracy": 5,
+        "risk_triage": 5,
+        "conciseness": 5,
+        "decision_utility": 5
+      },
+      "winner": "v2",
+      "reason": "Summary A is factually accurate and concise, whereas Summary B hallucinates specific director appointment dates, EBITDA figures, and litigation details not present in the ground truth."
+    },
+    {
+      "registrationNumber": "SYN-000267",
+      "swapped_order": false,
+      "v1_scores": {
+        "factual_accuracy": 2,
+        "risk_triage": 3,
+        "conciseness": 2,
+        "decision_utility": 3
+      },
+      "v2_scores": {
+        "factual_accuracy": 5,
+        "risk_triage": 5,
+        "conciseness": 5,
+        "decision_utility": 5
+      },
+      "winner": "v2",
+      "reason": "Summary B is factually accurate and concise, correctly identifying the company as a plaintiff with no defendant exposure, whereas Summary A hallucinates specific litigation details and director appointments not present in the ground truth."
+    },
+    {
+      "registrationNumber": "SYN-000286",
+      "swapped_order": true,
+      "v1_scores": {
+        "factual_accuracy": 1,
+        "risk_triage": 3,
+        "conciseness": 1,
+        "decision_utility": 2
+      },
+      "v2_scores": {
+        "factual_accuracy": 5,
+        "risk_triage": 5,
+        "conciseness": 5,
+        "decision_utility": 4
+      },
+      "winner": "v2",
+      "reason": "Summary A is factually accurate and concise, whereas Summary B hallucinates specific case details, financial metrics, and director appointment dates not present in the ground truth."
+    },
+    {
+      "registrationNumber": "SYN-000302",
+      "swapped_order": false,
+      "v1_scores": {
+        "factual_accuracy": 2,
+        "risk_triage": 4,
+        "conciseness": 3,
+        "decision_utility": 4
+      },
+      "v2_scores": {
+        "factual_accuracy": 5,
+        "risk_triage": 5,
+        "conciseness": 4,
+        "decision_utility": 5
+      },
+      "winner": "v2",
+      "reason": "Summary B is factually accurate and provides a clear risk verdict, whereas Summary A hallucinates specific director roles and appointment dates not present in the ground truth."
+    },
+    {
+      "registrationNumber": "SYN-000333",
+      "swapped_order": true,
+      "v1_scores": {
+        "factual_accuracy": 2,
+        "risk_triage": 4,
+        "conciseness": 3,
+        "decision_utility": 4
+      },
+      "v2_scores": {
+        "factual_accuracy": 5,
+        "risk_triage": 5,
+        "conciseness": 5,
+        "decision_utility": 5
+      },
+      "winner": "v2",
+      "reason": "Summary A is factually accurate and concise, whereas Summary B hallucinates specific director appointment dates and titles not present in the ground truth data."
+    },
+    {
+      "registrationNumber": "SYN-000397",
+      "swapped_order": false,
+      "v1_scores": {
+        "factual_accuracy": 2,
+        "risk_triage": 3,
+        "conciseness": 2,
+        "decision_utility": 3
+      },
+      "v2_scores": {
+        "factual_accuracy": 5,
+        "risk_triage": 5,
+        "conciseness": 5,
+        "decision_utility": 5
+      },
+      "winner": "v2",
+      "reason": "Summary B is factually accurate and concise, correctly identifying the litigation exposure and financial trends, whereas Summary A hallucinates specific case details, invents EBITDA figures, and misstates the total litigation exposure."
+    },
+    {
+      "registrationNumber": "SYN-000476",
+      "swapped_order": true,
+      "v1_scores": {
+        "factual_accuracy": 2,
+        "risk_triage": 4,
+        "conciseness": 2,
+        "decision_utility": 3
+      },
+      "v2_scores": {
+        "factual_accuracy": 5,
+        "risk_triage": 5,
+        "conciseness": 5,
+        "decision_utility": 5
+      },
+      "winner": "v2",
+      "reason": "Summary A is factually accurate and concise, whereas Summary B hallucinates specific director names, dates, and financial metrics (EBITDA, Total Assets) not present in the ground truth."
+    },
+    {
+      "registrationNumber": "SYN-000545",
+      "swapped_order": false,
+      "v1_scores": {
+        "factual_accuracy": 2,
+        "risk_triage": 3,
+        "conciseness": 2,
+        "decision_utility": 3
+      },
+      "v2_scores": {
+        "factual_accuracy": 5,
+        "risk_triage": 5,
+        "conciseness": 5,
+        "decision_utility": 5
+      },
+      "winner": "v2",
+      "reason": "Summary B is factually accurate and concise, correctly identifying the company's winding-up status and specific litigation figures, whereas Summary A hallucinates specific case numbers, invents a 'Total Assets' column, and incorrectly states that free cash flow turned negative in 2024."
+    },
+    {
+      "registrationNumber": "SYN-000546",
+      "swapped_order": true,
+      "v1_scores": {
+        "factual_accuracy": 2,
+        "risk_triage": 4,
+        "conciseness": 2,
+        "decision_utility": 3
+      },
+      "v2_scores": {
+        "factual_accuracy": 5,
+        "risk_triage": 5,
+        "conciseness": 5,
+        "decision_utility": 5
+      },
+      "winner": "v2",
+      "reason": "Summary A is concise, factually accurate, and provides a clear risk verdict, whereas Summary B hallucinates specific director appointment dates, invents an audit firm name, and includes a bloated table with unverified financial metrics."
+    },
+    {
+      "registrationNumber": "SYN-000640",
+      "swapped_order": false,
+      "v1_scores": {
+        "factual_accuracy": 2,
+        "risk_triage": 3,
+        "conciseness": 2,
+        "decision_utility": 3
+      },
+      "v2_scores": {
+        "factual_accuracy": 5,
+        "risk_triage": 5,
+        "conciseness": 5,
+        "decision_utility": 5
+      },
+      "winner": "v2",
+      "reason": "Summary B is factually accurate, concise, and correctly prioritizes the defendant judgment as the primary risk, whereas Summary A hallucinates specific case details, mischaracterizes plaintiff actions as liabilities, and is overly verbose."
+    },
+    {
+      "registrationNumber": "SYN-000802",
+      "swapped_order": true,
+      "v1_scores": {
+        "factual_accuracy": 2,
+        "risk_triage": 4,
+        "conciseness": 2,
+        "decision_utility": 3
+      },
+      "v2_scores": {
+        "factual_accuracy": 5,
+        "risk_triage": 5,
+        "conciseness": 5,
+        "decision_utility": 5
+      },
+      "winner": "v2",
+      "reason": "Summary A is factually accurate and concise, whereas Summary B hallucinates specific financial metrics (gross profit, DSO, cash ratio) and an audit firm name not present in the ground truth."
+    },
+    {
+      "registrationNumber": "SYN-001158",
+      "swapped_order": false,
+      "v1_scores": {
+        "factual_accuracy": 2,
+        "risk_triage": 3,
+        "conciseness": 2,
+        "decision_utility": 3
+      },
+      "v2_scores": {
+        "factual_accuracy": 5,
+        "risk_triage": 5,
+        "conciseness": 5,
+        "decision_utility": 5
+      },
+      "winner": "v2",
+      "reason": "Summary B is factually accurate and concise, whereas Summary A hallucinates specific financial metrics (gross profit, total assets, DSO) not present in the ground truth and incorrectly flags valid 2024-2025 dates as future errors."
+    },
+    {
+      "registrationNumber": "SYN-001203",
+      "swapped_order": true,
+      "v1_scores": {
+        "factual_accuracy": 1,
+        "risk_triage": 3,
+        "conciseness": 3,
+        "decision_utility": 2
+      },
+      "v2_scores": {
+        "factual_accuracy": 5,
+        "risk_triage": 5,
+        "conciseness": 5,
+        "decision_utility": 5
+      },
+      "winner": "v2",
+      "reason": "Summary A is factually accurate and concise, whereas Summary B hallucinates specific litigation details (case number, amount, status) and director appointment dates that are not present in the ground truth."
+    },
+    {
+      "registrationNumber": "SYN-001212",
+      "swapped_order": false,
+      "v1_scores": {
+        "factual_accuracy": 2,
+        "risk_triage": 4,
+        "conciseness": 2,
+        "decision_utility": 3
+      },
+      "v2_scores": {
+        "factual_accuracy": 5,
+        "risk_triage": 5,
+        "conciseness": 5,
+        "decision_utility": 5
+      },
+      "winner": "v2",
+      "reason": "Summary B is factually accurate with correct margins and litigation figures, whereas Summary A hallucinates specific case details, misstates profit margins, and includes fabricated financial metrics."
+    },
+    {
+      "registrationNumber": "SYN-001389",
+      "swapped_order": true,
+      "v1_scores": {
+        "factual_accuracy": 1,
+        "risk_triage": 2,
+        "conciseness": 2,
+        "decision_utility": 2
+      },
+      "v2_scores": {
+        "factual_accuracy": 5,
+        "risk_triage": 5,
+        "conciseness": 5,
+        "decision_utility": 5
+      },
+      "winner": "v2",
+      "reason": "Summary A is factually accurate and concise, whereas Summary B hallucinates significant financial metrics (EBITDA, OCF) and litigation details (case numbers, types, and statuses) that contradict the ground truth."
+    },
+    {
+      "registrationNumber": "SYN-001455",
+      "swapped_order": false,
+      "v1_scores": {
+        "factual_accuracy": 3,
+        "risk_triage": 4,
+        "conciseness": 2,
+        "decision_utility": 4
+      },
+      "v2_scores": {
+        "factual_accuracy": 5,
+        "risk_triage": 5,
+        "conciseness": 5,
+        "decision_utility": 5
+      },
+      "winner": "v2",
+      "reason": "Summary B is strictly accurate to the ground truth without hallucinating specific director names/dates or unverified financial metrics (like EBITDA/DSO) found in Summary A, and it presents the risk verdict and key flags more concisely."
+    },
+    {
+      "registrationNumber": "SYN-001569",
+      "swapped_order": true,
+      "v1_scores": {
+        "factual_accuracy": 2,
+        "risk_triage": 3,
+        "conciseness": 2,
+        "decision_utility": 3
+      },
+      "v2_scores": {
+        "factual_accuracy": 5,
+        "risk_triage": 5,
+        "conciseness": 5,
+        "decision_utility": 4
+      },
+      "winner": "v2",
+      "reason": "Summary A is factually accurate and concise, whereas Summary B hallucinates specific director titles, EBITDA figures, and working capital metrics not present in the ground truth."
+    }
+  ]
+}
