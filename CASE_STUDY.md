@@ -27,8 +27,7 @@ Based on the business goal and the dataset realities above, a good summary for t
 
 ---
 
-## 2. What you built
-## 2. What you built
+## 2. What I have built
 
 ### Sampling Strategy (Stratified 20-Company Sample)
 Rather than processing all 50 records blindly or taking an arbitrary first-N slice, I built a **stratified sample of 20 companies** designed to stay safely within free-tier API token limits while stress-testing every risk profile discovered in EDA:
