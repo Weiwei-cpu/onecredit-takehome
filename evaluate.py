@@ -191,7 +191,7 @@ def main():
     wins = {"v1": 0, "v2": 0, "Tie": 0}
 
     for idx, reg in enumerate(common_ids):
-        gt = preprocess_company(companies[reg])
+        gt = companies[reg]
         s1 = v1_map[reg]["summary"]
         s2 = v2_map[reg]["summary"]
 

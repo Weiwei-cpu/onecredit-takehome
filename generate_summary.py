@@ -5,6 +5,8 @@ import sys
 import time
 from pathlib import Path
 from dotenv import load_dotenv
+from sympy import comp
+from sympy import comp
 
 # 1. Load Groq API Key from local .env
 load_dotenv(Path(__file__).parent / ".env")
@@ -241,7 +243,12 @@ def run_pipeline(version: str = "v1", limit: int = None):
 
             print(f"[{i+1}/{len(companies)}] Generating summary for {reg_num}: {comp_name}...")
             
-            prompt = get_v1_prompt(comp) if version == "v1" else get_v2_prompt(preprocess_company(comp))
+            if version == "v1":
+                prompt = get_v1_prompt(comp)
+            elif version == "v1_preprocessed":
+                prompt = get_v1_prompt(preprocess_company(comp))
+            else:
+                prompt = get_v2_prompt(preprocess_company(comp))
             summary = call_llm(prompt)
             
             # Handle empty summaries 

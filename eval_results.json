@@ -30,21 +30,21 @@
   },
   "llm_judge_averages": {
     "v1": {
-      "factual_accuracy": 2.0,
-      "risk_triage": 3.4,
-      "conciseness": 2.1,
-      "decision_utility": 3.05
+      "factual_accuracy": 4.55,
+      "risk_triage": 4.0,
+      "conciseness": 2.3,
+      "decision_utility": 4.25
     },
     "v2": {
-      "factual_accuracy": 5.0,
-      "risk_triage": 5.0,
+      "factual_accuracy": 4.95,
+      "risk_triage": 4.95,
       "conciseness": 4.95,
-      "decision_utility": 4.85
+      "decision_utility": 4.75
     }
   },
   "pairwise_wins": {
-    "v1": 0,
-    "v2": 20,
+    "v1": 1,
+    "v2": 19,
     "Tie": 0
   },
   "details": [
@@ -52,10 +52,10 @@
       "registrationNumber": "SYN-000029",
       "swapped_order": false,
       "v1_scores": {
-        "factual_accuracy": 3,
-        "risk_triage": 3,
+        "factual_accuracy": 5,
+        "risk_triage": 4,
         "conciseness": 2,
-        "decision_utility": 3
+        "decision_utility": 4
       },
       "v2_scores": {
         "factual_accuracy": 5,
@@ -64,16 +64,16 @@
         "decision_utility": 5
       },
       "winner": "v2",
-      "reason": "Summary B is concise, accurately reflects the ground-truth data without hallucinating metrics or director details, and provides a clear, actionable risk verdict, whereas Summary A includes fabricated financial metrics (EBITDA, Total Assets) and incorrect director appointment dates."
+      "reason": "Summary B provides a superior risk triage with a clear verdict and concise format, whereas Summary A is bloated with tables and lacks an immediate risk classification."
     },
     {
       "registrationNumber": "SYN-000067",
       "swapped_order": true,
       "v1_scores": {
-        "factual_accuracy": 2,
-        "risk_triage": 3,
+        "factual_accuracy": 4,
+        "risk_triage": 4,
         "conciseness": 2,
-        "decision_utility": 3
+        "decision_utility": 5
       },
       "v2_scores": {
         "factual_accuracy": 5,
@@ -82,15 +82,15 @@
         "decision_utility": 4
       },
       "winner": "v2",
-      "reason": "Summary A is factually accurate and concise, whereas Summary B hallucinates specific director appointment dates and financial metrics (gross profit, total assets) not present in the ground truth."
+      "reason": "Summary A is significantly more concise and readable, meeting the word count constraint, whereas Summary B relies on bloated tables that hinder quick scanning, despite both being factually accurate."
     },
     {
       "registrationNumber": "SYN-000148",
       "swapped_order": false,
       "v1_scores": {
-        "factual_accuracy": 3,
+        "factual_accuracy": 5,
         "risk_triage": 4,
-        "conciseness": 2,
+        "conciseness": 3,
         "decision_utility": 4
       },
       "v2_scores": {
@@ -100,16 +100,16 @@
         "decision_utility": 5
       },
       "winner": "v2",
-      "reason": "Summary B is factually accurate, concise, and provides a clear high-risk verdict, whereas Summary A contains hallucinated details (specific director titles, audit firm name, and incorrect cash flow figures) and uses a bloated table format."
+      "reason": "Summary B provides a superior risk triage with a clear verdict and concise, actionable formatting, whereas Summary A uses a bloated table that reduces readability and lacks an explicit risk rating."
     },
     {
       "registrationNumber": "SYN-000165",
       "swapped_order": true,
       "v1_scores": {
-        "factual_accuracy": 2,
+        "factual_accuracy": 5,
         "risk_triage": 4,
-        "conciseness": 2,
-        "decision_utility": 3
+        "conciseness": 3,
+        "decision_utility": 4
       },
       "v2_scores": {
         "factual_accuracy": 5,
@@ -118,16 +118,16 @@
         "decision_utility": 5
       },
       "winner": "v2",
-      "reason": "Summary A is factually accurate and concise, whereas Summary B hallucinates specific director appointment dates, EBITDA figures, and litigation details not present in the ground truth."
+      "reason": "Summary A is significantly more concise and readable, presenting the risk verdict and key red flags immediately without the bloated tables found in Summary B, while maintaining equal factual accuracy."
     },
     {
       "registrationNumber": "SYN-000267",
       "swapped_order": false,
       "v1_scores": {
-        "factual_accuracy": 2,
-        "risk_triage": 3,
+        "factual_accuracy": 5,
+        "risk_triage": 4,
         "conciseness": 2,
-        "decision_utility": 3
+        "decision_utility": 4
       },
       "v2_scores": {
         "factual_accuracy": 5,
@@ -136,16 +136,16 @@
         "decision_utility": 5
       },
       "winner": "v2",
-      "reason": "Summary B is factually accurate and concise, correctly identifying the company as a plaintiff with no defendant exposure, whereas Summary A hallucinates specific litigation details and director appointments not present in the ground truth."
+      "reason": "Summary B is significantly more concise, provides a clear risk verdict, and correctly identifies the plaintiff-only litigation status without the bloated tables found in Summary A."
     },
     {
       "registrationNumber": "SYN-000286",
       "swapped_order": true,
       "v1_scores": {
-        "factual_accuracy": 1,
-        "risk_triage": 3,
-        "conciseness": 1,
-        "decision_utility": 2
+        "factual_accuracy": 4,
+        "risk_triage": 4,
+        "conciseness": 2,
+        "decision_utility": 5
       },
       "v2_scores": {
         "factual_accuracy": 5,
@@ -154,13 +154,13 @@
         "decision_utility": 4
       },
       "winner": "v2",
-      "reason": "Summary A is factually accurate and concise, whereas Summary B hallucinates specific case details, financial metrics, and director appointment dates not present in the ground truth."
+      "reason": "Summary A is significantly more concise and readable within the 30-second constraint, whereas Summary B relies on bloated tables that hinder quick scanning, despite both being factually accurate."
     },
     {
       "registrationNumber": "SYN-000302",
       "swapped_order": false,
       "v1_scores": {
-        "factual_accuracy": 2,
+        "factual_accuracy": 5,
         "risk_triage": 4,
         "conciseness": 3,
         "decision_utility": 4
@@ -172,13 +172,13 @@
         "decision_utility": 5
       },
       "winner": "v2",
-      "reason": "Summary B is factually accurate and provides a clear risk verdict, whereas Summary A hallucinates specific director roles and appointment dates not present in the ground truth."
+      "reason": "Summary B provides a clearer risk verdict and more actionable triage steps, while maintaining high factual accuracy and better conciseness than Summary A's table-heavy format."
     },
     {
       "registrationNumber": "SYN-000333",
       "swapped_order": true,
       "v1_scores": {
-        "factual_accuracy": 2,
+        "factual_accuracy": 5,
         "risk_triage": 4,
         "conciseness": 3,
         "decision_utility": 4
@@ -190,34 +190,34 @@
         "decision_utility": 5
       },
       "winner": "v2",
-      "reason": "Summary A is factually accurate and concise, whereas Summary B hallucinates specific director appointment dates and titles not present in the ground truth data."
+      "reason": "Summary A is superior due to its concise narrative format which avoids bloated tables, and it provides a clearer, more actionable risk verdict and specific KYC instructions compared to Summary B."
     },
     {
       "registrationNumber": "SYN-000397",
       "swapped_order": false,
       "v1_scores": {
-        "factual_accuracy": 2,
-        "risk_triage": 3,
-        "conciseness": 2,
-        "decision_utility": 3
-      },
-      "v2_scores": {
         "factual_accuracy": 5,
-        "risk_triage": 5,
-        "conciseness": 5,
+        "risk_triage": 4,
+        "conciseness": 2,
         "decision_utility": 5
       },
+      "v2_scores": {
+        "factual_accuracy": 4,
+        "risk_triage": 5,
+        "conciseness": 5,
+        "decision_utility": 4
+      },
       "winner": "v2",
-      "reason": "Summary B is factually accurate and concise, correctly identifying the litigation exposure and financial trends, whereas Summary A hallucinates specific case details, invents EBITDA figures, and misstates the total litigation exposure."
+      "reason": "Summary B is significantly more concise and provides a clear risk verdict, whereas Summary A is bloated with tables and fails to meet the word count constraint, despite both being factually accurate."
     },
     {
       "registrationNumber": "SYN-000476",
       "swapped_order": true,
       "v1_scores": {
-        "factual_accuracy": 2,
+        "factual_accuracy": 5,
         "risk_triage": 4,
-        "conciseness": 2,
-        "decision_utility": 3
+        "conciseness": 3,
+        "decision_utility": 4
       },
       "v2_scores": {
         "factual_accuracy": 5,
@@ -226,16 +226,16 @@
         "decision_utility": 5
       },
       "winner": "v2",
-      "reason": "Summary A is factually accurate and concise, whereas Summary B hallucinates specific director names, dates, and financial metrics (EBITDA, Total Assets) not present in the ground truth."
+      "reason": "Summary A is significantly more concise and readable, presenting the risk verdict and key financial trends in a narrative format that fits the 30-second review constraint, whereas Summary B relies on heavy tables that obscure the immediate risk assessment."
     },
     {
       "registrationNumber": "SYN-000545",
       "swapped_order": false,
       "v1_scores": {
-        "factual_accuracy": 2,
-        "risk_triage": 3,
+        "factual_accuracy": 4,
+        "risk_triage": 4,
         "conciseness": 2,
-        "decision_utility": 3
+        "decision_utility": 4
       },
       "v2_scores": {
         "factual_accuracy": 5,
@@ -244,16 +244,16 @@
         "decision_utility": 5
       },
       "winner": "v2",
-      "reason": "Summary B is factually accurate and concise, correctly identifying the company's winding-up status and specific litigation figures, whereas Summary A hallucinates specific case numbers, invents a 'Total Assets' column, and incorrectly states that free cash flow turned negative in 2024."
+      "reason": "Summary B is factually precise (correctly identifying FCF as positive), concise, and leads with a clear high-risk verdict, whereas Summary A contains a factual error regarding Free Cash Flow and is too verbose with tables."
     },
     {
       "registrationNumber": "SYN-000546",
       "swapped_order": true,
       "v1_scores": {
-        "factual_accuracy": 2,
+        "factual_accuracy": 5,
         "risk_triage": 4,
         "conciseness": 2,
-        "decision_utility": 3
+        "decision_utility": 4
       },
       "v2_scores": {
         "factual_accuracy": 5,
@@ -262,16 +262,16 @@
         "decision_utility": 5
       },
       "winner": "v2",
-      "reason": "Summary A is concise, factually accurate, and provides a clear risk verdict, whereas Summary B hallucinates specific director appointment dates, invents an audit firm name, and includes a bloated table with unverified financial metrics."
+      "reason": "Summary A is significantly more concise and readable, fitting the 30-second review constraint, while maintaining perfect factual accuracy and clear risk triage, whereas Summary B relies on bloated tables that hinder quick decision-making."
     },
     {
       "registrationNumber": "SYN-000640",
       "swapped_order": false,
       "v1_scores": {
-        "factual_accuracy": 2,
+        "factual_accuracy": 4,
         "risk_triage": 3,
         "conciseness": 2,
-        "decision_utility": 3
+        "decision_utility": 4
       },
       "v2_scores": {
         "factual_accuracy": 5,
@@ -280,16 +280,16 @@
         "decision_utility": 5
       },
       "winner": "v2",
-      "reason": "Summary B is factually accurate, concise, and correctly prioritizes the defendant judgment as the primary risk, whereas Summary A hallucinates specific case details, mischaracterizes plaintiff actions as liabilities, and is overly verbose."
+      "reason": "Summary B is concise, accurately distinguishes between plaintiff and defendant roles to correctly triage risk, and provides a clear, actionable verdict, whereas Summary A is bloated with tables and misleadingly aggregates plaintiff claims as contingent liabilities."
     },
     {
       "registrationNumber": "SYN-000802",
       "swapped_order": true,
       "v1_scores": {
-        "factual_accuracy": 2,
+        "factual_accuracy": 5,
         "risk_triage": 4,
         "conciseness": 2,
-        "decision_utility": 3
+        "decision_utility": 4
       },
       "v2_scores": {
         "factual_accuracy": 5,
@@ -298,16 +298,16 @@
         "decision_utility": 5
       },
       "winner": "v2",
-      "reason": "Summary A is factually accurate and concise, whereas Summary B hallucinates specific financial metrics (gross profit, DSO, cash ratio) and an audit firm name not present in the ground truth."
+      "reason": "Summary A is significantly more concise and readable, providing a clear risk verdict and actionable summary without the bloated tables found in Summary B, while maintaining equal factual accuracy."
     },
     {
       "registrationNumber": "SYN-001158",
       "swapped_order": false,
       "v1_scores": {
-        "factual_accuracy": 2,
-        "risk_triage": 3,
+        "factual_accuracy": 4,
+        "risk_triage": 4,
         "conciseness": 2,
-        "decision_utility": 3
+        "decision_utility": 4
       },
       "v2_scores": {
         "factual_accuracy": 5,
@@ -316,16 +316,16 @@
         "decision_utility": 5
       },
       "winner": "v2",
-      "reason": "Summary B is factually accurate and concise, whereas Summary A hallucinates specific financial metrics (gross profit, total assets, DSO) not present in the ground truth and incorrectly flags valid 2024-2025 dates as future errors."
+      "reason": "Summary B is significantly more concise, provides a clear risk verdict, and avoids the temporal hallucination in Summary A which incorrectly flags valid 2024-2025 director appointments as 'future' or errors relative to the 2025 review date."
     },
     {
       "registrationNumber": "SYN-001203",
       "swapped_order": true,
       "v1_scores": {
-        "factual_accuracy": 1,
-        "risk_triage": 3,
+        "factual_accuracy": 5,
+        "risk_triage": 4,
         "conciseness": 3,
-        "decision_utility": 2
+        "decision_utility": 4
       },
       "v2_scores": {
         "factual_accuracy": 5,
@@ -334,7 +334,7 @@
         "decision_utility": 5
       },
       "winner": "v2",
-      "reason": "Summary A is factually accurate and concise, whereas Summary B hallucinates specific litigation details (case number, amount, status) and director appointment dates that are not present in the ground truth."
+      "reason": "Summary A is superior due to its concise, risk-first structure that immediately highlights the critical transparency gap (missing financials) and provides a clear risk verdict, whereas Summary B relies on a bloated table and buries the key risk factor in a list of takeaways."
     },
     {
       "registrationNumber": "SYN-001212",
@@ -343,7 +343,7 @@
         "factual_accuracy": 2,
         "risk_triage": 4,
         "conciseness": 2,
-        "decision_utility": 3
+        "decision_utility": 4
       },
       "v2_scores": {
         "factual_accuracy": 5,
@@ -352,31 +352,13 @@
         "decision_utility": 5
       },
       "winner": "v2",
-      "reason": "Summary B is factually accurate with correct margins and litigation figures, whereas Summary A hallucinates specific case details, misstates profit margins, and includes fabricated financial metrics."
+      "reason": "Summary B is factually accurate regarding financial margins and litigation totals, whereas Summary A contains significant calculation errors (e.g., misstating net profit margins by a factor of 10) and is overly verbose."
     },
     {
       "registrationNumber": "SYN-001389",
       "swapped_order": true,
       "v1_scores": {
-        "factual_accuracy": 1,
-        "risk_triage": 2,
-        "conciseness": 2,
-        "decision_utility": 2
-      },
-      "v2_scores": {
-        "factual_accuracy": 5,
-        "risk_triage": 5,
-        "conciseness": 5,
-        "decision_utility": 5
-      },
-      "winner": "v2",
-      "reason": "Summary A is factually accurate and concise, whereas Summary B hallucinates significant financial metrics (EBITDA, OCF) and litigation details (case numbers, types, and statuses) that contradict the ground truth."
-    },
-    {
-      "registrationNumber": "SYN-001455",
-      "swapped_order": false,
-      "v1_scores": {
-        "factual_accuracy": 3,
+        "factual_accuracy": 4,
         "risk_triage": 4,
         "conciseness": 2,
         "decision_utility": 4
@@ -388,16 +370,16 @@
         "decision_utility": 5
       },
       "winner": "v2",
-      "reason": "Summary B is strictly accurate to the ground truth without hallucinating specific director names/dates or unverified financial metrics (like EBITDA/DSO) found in Summary A, and it presents the risk verdict and key flags more concisely."
+      "reason": "Summary A is significantly more concise and accurately identifies the single pending winding-up petition, whereas Summary B is bloated with tables and incorrectly states there are two pending winding-up petitions."
     },
     {
-      "registrationNumber": "SYN-001569",
-      "swapped_order": true,
+      "registrationNumber": "SYN-001455",
+      "swapped_order": false,
       "v1_scores": {
-        "factual_accuracy": 2,
-        "risk_triage": 3,
+        "factual_accuracy": 5,
+        "risk_triage": 4,
         "conciseness": 2,
-        "decision_utility": 3
+        "decision_utility": 5
       },
       "v2_scores": {
         "factual_accuracy": 5,
@@ -406,7 +388,25 @@
         "decision_utility": 4
       },
       "winner": "v2",
-      "reason": "Summary A is factually accurate and concise, whereas Summary B hallucinates specific director titles, EBITDA figures, and working capital metrics not present in the ground truth."
+      "reason": "Summary B is significantly more concise and leads with a clear risk verdict, making it more suitable for a 30-second review, whereas Summary A is bloated with tables that hinder quick scanning."
+    },
+    {
+      "registrationNumber": "SYN-001569",
+      "swapped_order": true,
+      "v1_scores": {
+        "factual_accuracy": 5,
+        "risk_triage": 5,
+        "conciseness": 2,
+        "decision_utility": 5
+      },
+      "v2_scores": {
+        "factual_accuracy": 5,
+        "risk_triage": 4,
+        "conciseness": 5,
+        "decision_utility": 4
+      },
+      "winner": "v1",
+      "reason": "Summary B provides superior decision utility and risk triage by explicitly highlighting the sub-1.0 Debt Service Coverage Ratio (a critical red flag missed by A) and offering specific actionable recommendations, despite being less concise due to table usage."
     }
   ]
 }

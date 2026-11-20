@@ -1,0 +1,191 @@
+{
+  "v1": {
+    "version": "v1",
+    "companies_checked": 20,
+    "total_percentages_cited": 248,
+    "unmatched_percentages": 34,
+    "grounding_accuracy_pct": 86.29,
+    "companies_with_unmatched": 14,
+    "flagged_details": [
+      {
+        "registrationNumber": "SYN-000029",
+        "unmatched_pcts": [
+          4.0,
+          90.0,
+          58.0
+        ]
+      },
+      {
+        "registrationNumber": "SYN-000067",
+        "unmatched_pcts": [
+          44.0,
+          44.0
+        ]
+      },
+      {
+        "registrationNumber": "SYN-000286",
+        "unmatched_pcts": [
+          13.0
+        ]
+      },
+      {
+        "registrationNumber": "SYN-000302",
+        "unmatched_pcts": [
+          59.0
+        ]
+      },
+      {
+        "registrationNumber": "SYN-000397",
+        "unmatched_pcts": [
+          6.0
+        ]
+      },
+      {
+        "registrationNumber": "SYN-000476",
+        "unmatched_pcts": [
+          35.0,
+          8.0,
+          35.0
+        ]
+      },
+      {
+        "registrationNumber": "SYN-000545",
+        "unmatched_pcts": [
+          15.0
+        ]
+      },
+      {
+        "registrationNumber": "SYN-000640",
+        "unmatched_pcts": [
+          8.0,
+          8.0
+        ]
+      },
+      {
+        "registrationNumber": "SYN-000802",
+        "unmatched_pcts": [
+          82.0
+        ]
+      },
+      {
+        "registrationNumber": "SYN-001158",
+        "unmatched_pcts": [
+          30.0,
+          20.0,
+          94.0
+        ]
+      },
+      {
+        "registrationNumber": "SYN-001203",
+        "unmatched_pcts": [
+          30.0
+        ]
+      },
+      {
+        "registrationNumber": "SYN-001212",
+        "unmatched_pcts": [
+          0.58,
+          0.03,
+          0.01,
+          0.58,
+          0.01
+        ]
+      },
+      {
+        "registrationNumber": "SYN-001389",
+        "unmatched_pcts": [
+          40.0,
+          107.0,
+          44.0,
+          67.0,
+          42.0,
+          40.0,
+          64.0,
+          6.0,
+          15.0
+        ]
+      },
+      {
+        "registrationNumber": "SYN-001455",
+        "unmatched_pcts": [
+          10.0
+        ]
+      }
+    ]
+  },
+  "v1_preprocessed": {
+    "version": "v1_preprocessed",
+    "companies_checked": 20,
+    "total_percentages_cited": 157,
+    "unmatched_percentages": 7,
+    "grounding_accuracy_pct": 95.54,
+    "companies_with_unmatched": 6,
+    "flagged_details": [
+      {
+        "registrationNumber": "SYN-000067",
+        "unmatched_pcts": [
+          8.0
+        ]
+      },
+      {
+        "registrationNumber": "SYN-000148",
+        "unmatched_pcts": [
+          20.0,
+          75.0
+        ]
+      },
+      {
+        "registrationNumber": "SYN-000397",
+        "unmatched_pcts": [
+          74.0
+        ]
+      },
+      {
+        "registrationNumber": "SYN-000476",
+        "unmatched_pcts": [
+          35.0
+        ]
+      },
+      {
+        "registrationNumber": "SYN-000640",
+        "unmatched_pcts": [
+          8.0
+        ]
+      },
+      {
+        "registrationNumber": "SYN-000802",
+        "unmatched_pcts": [
+          95.0
+        ]
+      }
+    ]
+  },
+  "v2": {
+    "version": "v2",
+    "companies_checked": 20,
+    "total_percentages_cited": 114,
+    "unmatched_percentages": 3,
+    "grounding_accuracy_pct": 97.37,
+    "companies_with_unmatched": 3,
+    "flagged_details": [
+      {
+        "registrationNumber": "SYN-000267",
+        "unmatched_pcts": [
+          90.0
+        ]
+      },
+      {
+        "registrationNumber": "SYN-001203",
+        "unmatched_pcts": [
+          30.0
+        ]
+      },
+      {
+        "registrationNumber": "SYN-001569",
+        "unmatched_pcts": [
+          99.0
+        ]
+      }
+    ]
+  }
+}
