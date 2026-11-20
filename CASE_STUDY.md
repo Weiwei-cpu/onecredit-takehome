@@ -150,14 +150,17 @@ The independent judge model preferred `v2` over `v1` on **19/20** sampled compan
 
 ### How to Reproduce
 1. Create a local `.env` file (gitignored — never committed) with your Groq key: `GROQ_API_KEY=your_key_here`
-2. Install dependencies: `pip install requests python-dotenv matplotlib`
+2. Add dependencies in the project environment:
+   ```bash
+   uv add requests python-dotenv matplotlib
+   ```
 3. Run the scripts in order:
-   - `python explore.py` → outputs dataset profile (`eda_summary.json`)
-   - `python generate_summary.py v1` / `v1_preprocessed` / `v2` → generates summaries (`summaries/<version>.jsonl`)
-   - `python check_numbers.py` → runs deterministic percentage grounding audit (`numeric_audit_results.json`)
-   - `python evaluate.py` → runs blind cross-model judge against raw JSON (`eval_results.json`)
-   - `python plot_eval.py` → generates `eval_comparison.png`
-
+   - `uv run python explore.py` → outputs dataset profile (`eda_summary.json`)
+   - `uv run python generate_summary.py v1` / `v1_preprocessed` / `v2` → generates summaries (`summaries/<version>.jsonl`)
+   - `uv run python check_numbers.py` → runs deterministic percentage grounding audit (`numeric_audit_results.json`)
+   - `uv run python evaluate.py` → runs blind cross-model judge against raw JSON (`eval_results.json`)
+   - `uv run python plot_eval.py` → generates `eval_comparison.png`
+   
 ### Disclosure of AI Tools & Models Used
 - **LLM APIs:**
   - **Groq (`openai/gpt-oss-120b`)** — Primary generator for `v1`, `v1_preprocessed`, and `v2`.
