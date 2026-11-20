@@ -5,7 +5,7 @@
 ### Business Context
 The end users are a vetting team deciding whether to onboard a company as a **supplier or project partner**. They do not need a full accounting report—they need a **fast, trustworthy first-pass screening brief** (readable in under 30 seconds) to answer one core question: *"Is this company safe to proceed with, or are there red flags requiring a closer look?"*
 
-### Step 1: Data Exploration Findings (`explore.py`)
+### Data Exploration Findings (`explore.py`)
 Before designing the summarization system, I profiled all **50 synthetic companies** in `data/companies.jsonl` (records as of 31 Dec 2025) to understand the data distribution and edge cases:
 
 - **Company Status (Deal-Breakers):** 48 companies are `Active`, while **2 companies are `Winding up`** (`SYN-000545` and `SYN-001212`, both with 8 court cases). For a vetting team, a winding-up status is an immediate deal-breaker that must be surfaced at the very top of the summary.
@@ -27,7 +27,7 @@ Based on the business goal and the dataset realities above, a good summary for t
 
 ---
 
-## 2. What I have built
+## 2. What you built
 
 ### Sampling Strategy (Stratified 20-Company Sample)
 Rather than processing all 50 records blindly or taking an arbitrary first-N slice, I built a **stratified sample of 20 companies** designed to stay safely within free-tier API token limits while stress-testing every risk profile discovered in EDA:
