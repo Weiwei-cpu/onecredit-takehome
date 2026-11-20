@@ -80,9 +80,9 @@ Because `v2` changed both the **input representation** and the **prompt template
 I evaluated `v1`, `v1_preprocessed` (ablation), and `v2` on the 20 sampled companies (`n=20`) using **two complementary quantitative layers** plus side-by-side Viewer inspection (`http://localhost:8000`):
 
 ![Evaluation Comparison](eval_comparison.png)
-*Figure 1: Left — deterministic percentage grounding accuracy measured by `check_numbers.py` across `v1`, `v1_preprocessed`, and `v2`. Right — blind pairwise scores from `evaluate.py` (`qwen/qwen3.8-27b`, raw JSON ground truth).*
+*Figure 1: Left — deterministic percentage grounding accuracy measured by `check_num.py` across `v1`, `v1_preprocessed`, and `v2`. Right — blind pairwise scores from `evaluate.py` (`qwen/qwen3.8-27b`, raw JSON ground truth).*
 
-### 1. Layer 1 — Programmatic Numeric Grounding & Ablation Audit (`check_numbers.py`, 0 API calls)
+### 1. Layer 1 — Programmatic Numeric Grounding & Ablation Audit (`check_num.py`, 0 API calls)
 Rather than relying solely on an LLM judge for Criterion #2 (factual accuracy), I wrote a deterministic script that extracts every percentage (`X.XX%`) from each summary and verifies it against all mathematically valid percentages derivable from the raw JSON (shareholder stakes/sums, financial ratios × 100, and multi-year statement changes) within a strict **±0.15 percentage-point tolerance** (saved in `numeric_audit_results.json`):
 
 | Metric (`n=20` sampled companies) | `v1` (Raw + Simple) | `v1_preprocessed` (Ablation) | `v2` (Preprocessed + Template) |
@@ -131,7 +131,7 @@ The independent judge model preferred `v2` over `v1` on **19/20** sampled compan
 2. **Scale `v2` to All 50 Companies & Production Observability:**
    - Because `v2`'s preprocessed payload is 63.6% smaller, run `v2` across the remaining 30 companies cleanly within free-tier limits, and in production track prompt versions, latency, and token cost via **MLflow** or **Langfuse**.
 3. **Expand Programmatic Guardrails (RM Amounts + CSS Fallback):**
-   - Extend `check_numbers.py` to also verify every RM monetary figure against the source JSON as a pre-serve guardrail, and add `overflow-x: auto` CSS in `app/static/index.html` as a defensive fallback for any future tabular output.
+   - Extend `check_num.py` to also verify every RM monetary figure against the source JSON as a pre-serve guardrail, and add `overflow-x: auto` CSS in `app/static/index.html` as a defensive fallback for any future tabular output.
 4. **Human-in-the-Loop Golden Set & Feedback Loop:**
    - Have analysts score a 20-company golden set to measure judge-to-human agreement (Cohen's kappa) and add lightweight thumbs-up/down + reason tags (*"missed risk"*, *"wrong figure"*, *"too verbose"*) in the UI to drive ongoing prompt iterations.
 
@@ -144,7 +144,7 @@ The independent judge model preferred `v2` over `v1` on **19/20** sampled compan
 | `generate_summary.py` | Main pipeline generating `v1` (raw baseline), `v1_preprocessed` (ablation), and `v2` (final risk-first system) via Groq. |
 | `summaries/v1.jsonl` & `summaries/v2.jsonl` | Generated Markdown summaries for the 20 sampled companies (viewable side-by-side in the local Docker Viewer). |
 | `experiments/v1_preprocessed.jsonl` | Intermediate ablation output (preprocessed data + `v1` prompt) isolating preprocessing vs. prompt gains. |
-| `check_numbers.py` / `numeric_audit_results.json` | Deterministic Python audit verifying all cited percentages against the raw JSON (`±0.15pp`). |
+| `check_num.py` / `numeric_audit_results.json` | Deterministic Python audit verifying all cited percentages against the raw JSON (`±0.15pp`). |
 | `evaluate.py` / `eval_results.json` | Blind cross-model LLM-as-a-Judge (`qwen/qwen3.8-27b`) comparing `v1` vs. `v2` against raw JSON ground truth. |
 | `plot_eval.py` / `eval_comparison.png` | Dynamically generates the 2-panel comparison chart from the JSON audit and evaluation artifacts. |
 
@@ -157,10 +157,10 @@ The independent judge model preferred `v2` over `v1` on **19/20** sampled compan
 3. Run the scripts in order:
    - `uv run python explore.py` → outputs dataset profile (`eda_summary.json`)
    - `uv run python generate_summary.py v1` / `v1_preprocessed` / `v2` → generates summaries (`summaries/<version>.jsonl`)
-   - `uv run python check_numbers.py` → runs deterministic percentage grounding audit (`numeric_audit_results.json`)
+   - `uv run python check_num.py` → runs deterministic percentage grounding audit (`numeric_audit_results.json`)
    - `uv run python evaluate.py` → runs blind cross-model judge against raw JSON (`eval_results.json`)
    - `uv run python plot_eval.py` → generates `eval_comparison.png`
-   
+
 ### Disclosure of AI Tools & Models Used
 - **LLM APIs:**
   - **Groq (`openai/gpt-oss-120b`)** — Primary generator for `v1`, `v1_preprocessed`, and `v2`.
@@ -169,4 +169,4 @@ The independent judge model preferred `v2` over `v1` on **19/20** sampled compan
 - **How I Used AI Assistants (Antigravity / Gemini & Claude):**
   - **Model Selection & Architecture:** Consulted both **Antigravity (Gemini)** and **Claude** to compare free-tier LLM options, plan rate-limit budgets, and design the cross-model evaluation strategy.
   - **Guided Step-by-Step Implementation (No Blind "Vibe Coding"):** Rather than copy-pasting entire codebases blindly, I used Antigravity as a step-by-step pair-programming tutor—making targeted edits myself and walking through every bug (e.g., HTTP 429/503 retries, `caseType` schema mismatch, and `maxOutputTokens` truncation) so I fully understand every line of code.
-  - **Independent Review & Manual Checking (~2 Hours):** I used the last ~2 hours to review and verify my work. I asked **Claude** to critique my draft results and case study, which helped me spot gaps and add the `v1_preprocessed` comparison and `check_numbers.py` script. When I read through `eval_results.json` myself, seeing `v2` win 20/20 while the judge kept accusing `v1` of hallucinations felt suspicious—so I checked the code, realized the judge wasn't seeing the full original JSON, and re-ran it fairly against the full company records.
+  - **Independent Review & Manual Checking (~2 Hours):** I used the last ~2 hours to review and verify my work. I asked **Claude** to critique my draft results and case study, which helped me spot gaps and add the `v1_preprocessed` comparison and `check_num.py` script. When I read through `eval_results.json` myself, seeing `v2` win 20/20 while the judge kept accusing `v1` of hallucinations felt suspicious—so I checked the code, realized the judge wasn't seeing the full original JSON, and re-ran it fairly against the full company records.
